@@ -100,13 +100,13 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': os.getenv('POSTGRES_URL'),
-        'NAME': os.getenv('PGNAME'),
-        'USER': os.getenv('PGUSER'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('PGHOST'),
-        'PORT': os.getenv('PGPORT'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'URL': 'postgresql://postgres:9F7ZRPFSkklKJt6pZkun@containers-us-west-32.railway.app:6407/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '9F7ZRPFSkklKJt6pZkun',
+        'HOST': 'containers-us-west-32.railway.app',
+        'PORT': '6407',
     }
 }
 # The settings for media files have been updated for the Graded assessment
