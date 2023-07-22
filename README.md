@@ -1,7 +1,7 @@
 ## Little Lemon Restaurant API Documentation ##
 
 **Description:**  
-The Little Lemon Restaurant API provides developers with endpoints to interact with the restaurant's services programmatically. The API allows users to access menu items, place orders, manage bookings, view categories, and perform various other operations related to the restaurant's functionality. To access certain endpoints, developers need to obtain an authentication token using the `/api-token-auth/` endpoint.
+The Little Lemon Restaurant API provides developers with endpoints to interact with the restaurant's services programmatically. The API allows users to access menu items, place orders, manage bookings, view categories, and perform various other operations related to the restaurant's functionality. To access certain endpoints, developers need to obtain an authentication token using the `/auth/login` endpoint. You need to register as a user before being able to get an authentication token via sending a `POST` request to `auth/users` with the body containing your username, password and email.
 
 **Base URL:**  
 `https://api.littlelemonrestaurant.com`
@@ -107,18 +107,7 @@ json
 ```
 json
 
-{
-  "items": [
-    {
-      "menu_item_id": 1,
-      "quantity": 2
-    },
-    {
-      "menu_item_id": 2,
-      "quantity": 1
-    }
-  ]
-}
+{}
 ```
 Response Example:
 
@@ -315,3 +304,7 @@ json
 *Method: POST*  
 *Restriction: managers only*  
 *Response: `{"Message": "User added successfully to manager group}`*  
+
+## Little Lemon Restaurant App Documentation ##  
+**Base route:**
+`/`
