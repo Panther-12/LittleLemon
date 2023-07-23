@@ -4,7 +4,7 @@
 The Little Lemon Restaurant API provides developers with endpoints to interact with the restaurant's services programmatically. The API allows users to access menu items, place orders, manage bookings, view categories, and perform various other operations related to the restaurant's functionality. To access certain endpoints, developers need to obtain an authentication token using the `/auth/login` endpoint. You need to register as a user before being able to get an authentication token via sending a `POST` request to `auth/users` with the body containing your username, password and email.
 
 **Base URL:**  
-`https://api.littlelemonrestaurant.com`
+`https://vercel.live/link/africancharm-eats.vercel.app`
 
 **Authentication:**  
 Authentication is required to access protected endpoints. Developers must include an authentication token in the request headers for endpoints that require authorization.
